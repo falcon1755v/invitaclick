@@ -2,20 +2,19 @@ backend:
   name: github
   repo: falcon1755v/invitaclick
   branch: main
+  base_url: https://api.decapcms.org
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 collections:
     - name: "invitaciones"
-    label: "📩 Mis Invitaciones"
+    label: "Mis Invitaciones"
     folder: "invitaciones"
     create: true
     slug: "{{slug}}"
-    extension: "html"
     fields:
-            - {label: "Nombre de la carpeta (sin espacios)", name: "title", widget: "string", hint: "Ej: boda-ana-carlos"}
-            - {label: "Nombres del Evento", name: "names", widget: "string", default: "María & Luis"}
-            - {label: "Fecha del Evento", name: "date", widget: "datetime", default: ""}
-            - {label: "Color Principal", name: "color", widget: "color", default: "#C5A059", hint: "Toca para cambiar a rosa, azul, etc"}
-            - {label: "Link de Google Maps", name: "maps", widget: "string", hint: "Pega el link de Maps"}
-            - {label: "WhatsApp para confirmar", name: "whatsapp", widget: "string", hint: "Ej: 5215512345678"}
-            - {label: "Fotos de Galería", name: "gallery", widget: "image", allow_multiple: true}
+            - {label: "Carpeta (ej: boda-ana)", name: "title", widget: "string"}
+            - {label: "Nombres", name: "names", widget: "string", default: "María & Luis"}
+            - {label: "Color Principal", name: "color", widget: "color", default: "#C5A059"}
+            - {label: "Fecha", name: "date", widget: "datetime"}
+            - {label: "WhatsApp", name: "whatsapp", widget: "string", default: "5215512345678"}
+            - {label: "Link Google Maps", name: "maps", widget: "string"}
