@@ -2,7 +2,6 @@ backend:
   name: github
   repo: falcon1755v/invitaclick
   branch: main
-  base_url: https://api.decapcms.org
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 collections:
@@ -12,9 +11,24 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-            - {label: "Carpeta (ej: boda-ana)", name: "title", widget: "string"}
-            - {label: "Nombres", name: "names", widget: "string", default: "María & Luis"}
-            - {label: "Color Principal", name: "color", widget: "color", default: "#C5A059"}
-            - {label: "Fecha", name: "date", widget: "datetime"}
-            - {label: "WhatsApp", name: "whatsapp", widget: "string", default: "5215512345678"}
-            - {label: "Link Google Maps", name: "maps", widget: "string"}
+            - label: "Carpeta (ej: boda-ana)"
+        name: "title"
+        widget: "string"
+            - label: "Nombres"
+        name: "names"
+        widget: "string"
+        default: "María & Luis"
+            - label: "Color Principal"
+        name: "color"
+        widget: "color"
+        default: "#C5A059"
+            - label: "Fecha"
+        name: "date"
+        widget: "datetime"
+            - label: "WhatsApp"
+        name: "whatsapp"
+        widget: "string"
+        default: "5215512345678"
+            - label: "Link Google Maps"
+        name: "maps"
+        widget: "string"
